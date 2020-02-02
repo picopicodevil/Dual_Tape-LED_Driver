@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 0.6)
     (user_trace_width 0.8)
@@ -1244,7 +1244,7 @@
   (gr_text "Desinged by TNK." (at 185.42 142.24) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "Dual Tape-LED Blinky\nPrototype 1.0" (at 124.46 106.68) (layer F.SilkS)
+  (gr_text "Dual Tape-LED Blinky\nPrototype 1.1" (at 124.46 106.68) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_arc (start 188.65 108.45) (end 193.65 108.45) (angle -90) (layer Edge.Cuts) (width 0.1) (tstamp 5E37640E))
