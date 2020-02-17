@@ -72,25 +72,12 @@ F 3 "~" H 5350 3350 50  0001 C CNN
 	1    5350 3350
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5800 2450 5800 2550
-$Comp
-L Device:R R2
-U 1 1 5DA62725
-P 5800 2700
-F 0 "R2" H 5593 2700 50  0000 C CNN
-F 1 "R" H 5684 2700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5730 2700 50  0001 C CNN
-F 3 "~" H 5800 2700 50  0001 C CNN
-	1    5800 2700
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:LED D1
 U 1 1 5DA61D4E
 P 5800 3000
 F 0 "D1" V 5839 2883 50  0000 R CNN
-F 1 "LED" V 5748 2883 50  0000 R CNN
+F 1 "Tape-LED" V 5748 2883 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5800 3000 50  0001 C CNN
 F 3 "~" H 5800 3000 50  0001 C CNN
 	1    5800 3000
@@ -321,17 +308,6 @@ F 3 "" H 7250 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCC #PWR0113
-U 1 1 5E388481
-P 8350 2600
-F 0 "#PWR0113" H 8350 2450 50  0001 C CNN
-F 1 "VCC" H 8367 2773 50  0000 C CNN
-F 2 "" H 8350 2600 50  0001 C CNN
-F 3 "" H 8350 2600 50  0001 C CNN
-	1    8350 2600
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR05
 U 1 1 5E38C2F4
 P 4600 5200
@@ -354,7 +330,7 @@ F 3 "~" H 4450 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5200 4300 5200 5000
+	5200 4600 5200 5000
 $Comp
 L Device:R R8
 U 1 1 5E38C307
@@ -367,7 +343,7 @@ F 3 "~" H 5500 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 4300 5800 4300
+	5200 4600 5800 4600
 $Comp
 L Device:R R7
 U 1 1 5E38C30E
@@ -380,24 +356,13 @@ F 3 "~" H 5350 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5800 4300 5800 4400
-$Comp
-L Device:R R5
-U 1 1 5E38C315
-P 5800 4550
-F 0 "R5" H 5593 4550 50  0000 C CNN
-F 1 "R" H 5684 4550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5730 4550 50  0001 C CNN
-F 3 "~" H 5800 4550 50  0001 C CNN
-	1    5800 4550
-	-1   0    0    1   
-$EndComp
+	5800 4600 5800 4700
 $Comp
 L Device:LED D2
 U 1 1 5E38C31B
 P 5800 4850
 F 0 "D2" V 5839 4733 50  0000 R CNN
-F 1 "LED" V 5748 4733 50  0000 R CNN
+F 1 "Tape-LED" V 5748 4733 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5800 4850 50  0001 C CNN
 F 3 "~" H 5800 4850 50  0001 C CNN
 	1    5800 4850
@@ -462,8 +427,21 @@ $EndComp
 Connection ~ 4600 5200
 Text GLabel 5800 2450 2    50   Input ~ 0
 12V
-Text GLabel 5200 4300 0    50   Output ~ 0
+Text GLabel 5200 4600 0    50   Output ~ 0
 12V
+$Comp
+L power:VCC #PWR0103
+U 1 1 5E37EF62
+P 7250 3050
+F 0 "#PWR0103" H 7250 2900 50  0001 C CNN
+F 1 "VCC" H 7267 3223 50  0000 C CNN
+F 2 "" H 7250 3050 50  0001 C CNN
+F 3 "" H 7250 3050 50  0001 C CNN
+	1    7250 3050
+	0    -1   -1   0   
+$EndComp
 NoConn ~ 8350 3050
-NoConn ~ 7250 3050
+NoConn ~ 8350 2600
+Wire Wire Line
+	5800 2450 5800 2850
 $EndSCHEMATC
