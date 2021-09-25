@@ -29,7 +29,7 @@ L Device:R R1
 U 1 1 5DA6EF16
 P 4450 3150
 F 0 "R1" V 4243 3150 50  0000 C CNN
-F 1 "220?" V 4334 3150 50  0000 C CNN
+F 1 "220" V 4334 3150 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 3150 50  0001 C CNN
 F 3 "~" H 4450 3150 50  0001 C CNN
 	1    4450 3150
@@ -71,30 +71,6 @@ F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5280 3350
 F 3 "~" H 5350 3350 50  0001 C CNN
 	1    5350 3350
 	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5800 2450 5800 2550
-$Comp
-L Device:R R2
-U 1 1 5DA62725
-P 5800 2700
-F 0 "R2" H 5593 2700 50  0000 C CNN
-F 1 "R" H 5684 2700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5730 2700 50  0001 C CNN
-F 3 "~" H 5800 2700 50  0001 C CNN
-	1    5800 2700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 5DA61D4E
-P 5800 3000
-F 0 "D1" V 5839 2883 50  0000 R CNN
-F 1 "LED" V 5748 2883 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5800 3000 50  0001 C CNN
-F 3 "~" H 5800 3000 50  0001 C CNN
-	1    5800 3000
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5500 3650 5800 3650
@@ -336,14 +312,12 @@ L Device:R R6
 U 1 1 5E38C2FA
 P 4450 5000
 F 0 "R6" V 4243 5000 50  0000 C CNN
-F 1 "220?" V 4334 5000 50  0000 C CNN
+F 1 "220" V 4334 5000 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 5000 50  0001 C CNN
 F 3 "~" H 4450 5000 50  0001 C CNN
 	1    4450 5000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5200 4300 5200 5000
 $Comp
 L Device:R R8
 U 1 1 5E38C307
@@ -355,8 +329,6 @@ F 3 "~" H 5500 5350 50  0001 C CNN
 	1    5500 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5200 4300 5800 4300
 $Comp
 L Device:R R7
 U 1 1 5E38C30E
@@ -367,30 +339,6 @@ F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5280 5200
 F 3 "~" H 5350 5200 50  0001 C CNN
 	1    5350 5200
 	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5800 4300 5800 4400
-$Comp
-L Device:R R5
-U 1 1 5E38C315
-P 5800 4550
-F 0 "R5" H 5593 4550 50  0000 C CNN
-F 1 "R" H 5684 4550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5730 4550 50  0001 C CNN
-F 3 "~" H 5800 4550 50  0001 C CNN
-	1    5800 4550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 5E38C31B
-P 5800 4850
-F 0 "D2" V 5839 4733 50  0000 R CNN
-F 1 "LED" V 5748 4733 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5800 4850 50  0001 C CNN
-F 3 "~" H 5800 4850 50  0001 C CNN
-	1    5800 4850
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5500 5500 5800 5500
@@ -451,8 +399,6 @@ $EndComp
 Connection ~ 4600 5200
 Text GLabel 5800 2450 2    50   Input ~ 0
 12V
-Text GLabel 5200 4300 0    50   Output ~ 0
-12V
 $Comp
 L power:VCC #PWR0103
 U 1 1 5E37EF62
@@ -466,4 +412,58 @@ F 3 "" H 7250 3050 50  0001 C CNN
 $EndComp
 NoConn ~ 8350 3050
 NoConn ~ 8350 2600
+Wire Wire Line
+	5800 2450 5800 2550
+Text GLabel 5200 4300 0    50   Output ~ 0
+12V
+Wire Wire Line
+	5800 4300 5800 4400
+Wire Wire Line
+	5200 4300 5800 4300
+Wire Wire Line
+	5200 4300 5200 5000
+$Comp
+L Device:LED D2
+U 1 1 5E38C31B
+P 5800 4850
+F 0 "D2" V 5839 4733 50  0000 R CNN
+F 1 "LED" V 5748 4733 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5800 4850 50  0001 C CNN
+F 3 "~" H 5800 4850 50  0001 C CNN
+	1    5800 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E38C315
+P 5800 4550
+F 0 "R5" H 5593 4550 50  0000 C CNN
+F 1 "R" H 5684 4550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5730 4550 50  0001 C CNN
+F 3 "~" H 5800 4550 50  0001 C CNN
+	1    5800 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5DA61D4E
+P 5800 3000
+F 0 "D1" V 5839 2883 50  0000 R CNN
+F 1 "LED" V 5748 2883 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5800 3000 50  0001 C CNN
+F 3 "~" H 5800 3000 50  0001 C CNN
+	1    5800 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DA62725
+P 5800 2700
+F 0 "R2" H 5593 2700 50  0000 C CNN
+F 1 "R" H 5684 2700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5730 2700 50  0001 C CNN
+F 3 "~" H 5800 2700 50  0001 C CNN
+	1    5800 2700
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
